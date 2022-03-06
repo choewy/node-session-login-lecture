@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Auth from "../api/Auth";
 import Navbar from "./common/Navbar";
-import HomePage from "./pages/HomePages";
+import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 
