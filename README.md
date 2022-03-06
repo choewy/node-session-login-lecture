@@ -12,19 +12,7 @@ $ docker-compose up -d
 ## server
 
 - Node.js(express)
-- .env
-
-```
-CORS_ORIGIN=http://localhost:3000
-
-SESSION_SECRET=SessionSecretKey
-
-MYSQL_HOST=localhost
-MYSQL_USER=root
-MYSQL_PASSWD=root
-MYSQL_DB=service
-```
-
+- [setting](https://github.com/choewy/node-session-login-lecture/tree/master/server)
 - run
 
 ```
