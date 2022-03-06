@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-mysql-session": "^2.1.7",
+    "express-session": "^1.17.2",
+    "mybatis-mapper": "^0.6.5",
+    "mysql": "^2.18.1"
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "bin": {
+    "app": "bin/www.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./bin/www.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

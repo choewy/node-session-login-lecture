@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sqlMapper">
+  <select id="insertUser">
+    INSERT INTO 
+      users(
+        id, 
+        name, 
+        passwd, 
+        saltkey,
+        role,
+        created_at,
+        updated_at
+      )
+    VALUES(
+      #{id}, 
+      #{name}, 
+      #{passwd}, 
+      #{saltkey},
+      DEFAULT,
+      DEFAULT,
+      DEFAULT
+    );
+  </select>
+  <select id="selectUserById">
+    SELECT 
+      *
+    FROM 
+      users
+    WHERE
+      id = #{id};
+  </select>
+  <select id="tokenInsertQuery">
+    INSERT INTO
+      tokens (
+        id,
+        token,
+        created_at
+      )
+    VALUES (
+      #{id},
+      #{refreshToken},
+      DEFAULT
+    );
+  </select>
+  <select id="tokenSelectByIdQuery">
+    SELECT
+      *
+    FROM
+      tokens
+    WHERE
+      id = #{id};
+  </select>
+</mapper>
